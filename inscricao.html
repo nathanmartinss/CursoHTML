@@ -131,28 +131,37 @@
 									<option value="" selected disabled>Selecione um curso</option>
 									<option value="java">Java</option>
 									<option value="html">HTML</option>
-									<option value="cpp">C++</option>
+									<option value="c++">C++</option>
 								</select><br>
 
 								<label for="valor">Valor*:</label><br>
 								<input type="text" id="valor" name="valor" required readonly><br>
 								<script>
-									const cursoNome = document.getElementById("curso_nome");
-									const valor = document.getElementById("valor");
-
-									cursoNome.addEventListener("change", function () {
+									function atualizarValor() {
+										const cursoNome = document.getElementById("curso_nome");
+										const valor = document.getElementById("valor");
+										
 										if (cursoNome.value === "java") {
 											valor.value = "2.000,00";
 										} else if (cursoNome.value === "html") {
 											valor.value = "800,00";
-										} else if (cursoNome.value === "cpp") {
+										} else if (cursoNome.value === "c++") {
 											valor.value = "2.500,00";
 										} else {
 											valor.value = "";
 										}
-									});
+									}
+									const cursoDefault = document.URL.split("=")[1];
+									if (cursoDefault) {
+										document.addEventListener("DOMContentLoaded", function() {
+											const cursoNome = document.getElementById("curso_nome");
+											cursoNome.value = cursoDefault;
+											atualizarValor();
+										});
+									}
+									const cursoNome = document.getElementById("curso_nome");
+									cursoNome.addEventListener("change", atualizarValor);
 								</script>
-
 								<label for="data_ingresso">Data de ingresso*:</label><br>
 								<input type="date" id="data_ingresso" name="data_ingresso" value="" required><br>
 
