@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>privateCursos - Inscrição</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1 id="logo"><a href="index.html">privateCursos</a></h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li>
+						<a href="#">Cursos</a>
+						<ul>
+							<li><a href="java.html">Java</a></li>
+							<li><a href="html.html">HTML</a></li>
+							<li><a href="c++.html">C++</a></li>
+						</ul>
+					</li>
+					<li><a href="elements.html">Sobre nós</a></li>
+					<li><a href="#" class="button primary">Se inscreva!</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main" class="wrapper style1">
+			<div class="container">
+				<header class="major">
+					<h2>Formulário de inscrição</h2>
+				</header>
+				<div class="row gtr-150">
+					<div class="col-4 col-12-medium">
+
+						<form action="/submit" method="post">
+							<h2>Dados do Aluno</h2>
+							<label for="nome">Nome*:</label><br>
+							<input type="text" id="nome" name="nome" required><br>
+							<label for="endereco">Endereço:</label><br>
+							<input type="text" id="endereco" name="endereco"><br>
+							<label for="numero">Número:</label><br>
+							<input type="text" id="numero" name="numero"><br>
+							<label for="complemento">Complemento:</label><br>
+							<input type="text" id="complemento" name="complemento"><br>
+							<label for="bairro">Bairro:</label><br>
+							<input type="text" id="bairro" name="bairro"><br>
+							<label for="cidade">Cidade:</label><br>
+							<input type="text" id="cidade" name="cidade"><br>
+							<label for="estado">Estado:</label><br>
+							<input type="text" id="estado" name="estado"><br>
+							<label for="cep">CEP:</label><br>
+							<input type="text" id="cep" name="cep"><br>
+							<label for="celular">Celular*:</label><br>
+							<input type="text" id="celular" name="celular" required><br>
+							<label for="email">E-mail*:</label><br>
+							<input type="email" id="email" name="email" required><br>
+							<label for="cor">Cor*:</label><br>
+							<select id="cor" name="cor" required>
+								<option value="branca">Branca</option>
+								<option value="parda">Parda</option>
+								<option value="preta">Preta</option>
+								<option value="amarela">Amarela</option>
+								<option value="indigena">Indígena</option>
+							</select><br>
+
+							<h2>Dados do Pai</h2>
+							<label for="pai_nome">Nome*:</label><br>
+							<input type="text" id="pai_nome" name="pai_nome" required><br>
+							<label for="pai_cpf">CPF*:</label><br>
+							<input type="text" id="pai_cpf" name="pai_cpf" required><br>
+							<label for="pai_dn">Data de nascimento:</label><br>
+							<input type="date" id="pai_dn" name="pai_dn"><br>
+							</br><label for="pai_profissao">Profissão:</label><br>
+							<input type="text" id="pai_profissao" name="pai_profissao"><br>
+							<label for="pai_telefone">Telefone:</label><br>
+							<input type="text" id="pai_telefone" name="pai_telefone"><br>
+							<label for="pai_celular">Celular*:</label><br>
+							<input type="text" id="pai_celular" name="pai_celular" required><br>
+							<label for="pai_email">E-mail*:</label><br>
+							<input type="email" id="pai_email" name="pai_email" required><br>
+							<label for="escolaridade">Escolaridade:</label><br>
+							<input type="text" id="escolaridade" name="escolaridade"><br>
+
+
+							<div class="col-4 col-12-medium">
+								<label for="responsavel-financeiro-pai-sim">É responsável financeiro?</label><br>
+								<input type="radio" id="responsavel-financeiro-pai-sim" name="financeiro" value="sim">
+								<label for="responsavel-financeiro-pai-sim">Sim</label>
+								<input type="radio" id="responsavel-financeiro-pai-nao" name="financeiro" value="nao">
+								<label for="responsavel-financeiro-pai-nao">Não</label><br>
+							</div>
+
+							</br>
+							<h2>Dados da Mãe</h2>
+							<label for="mae_nome">Nome*:</label><br>
+							<input type="text" id="mae_nome" name="mae_nome" required><br>
+							<label for="mae_cpf">CPF*:</label><br>
+							<input type="text" id="mae_cpf" name="mae_cpf" required><br>
+							<label for="mae_dn">Data de nascimento:</label><br>
+							<input type="date" id="mae_dn" name="mae_dn"><br>
+							</br><label for="mae_profissao">Profissão:</label><br>
+							<input type="text" id="mae_profissao" name="mae_profissao"><br>
+							<label for="mae_telefone">Telefone:</label><br>
+							<input type="text" id="mae_telefone" name="mae_telefone"><br>
+							<label for="mae_celular">Celular*:</label><br>
+							<input type="text" id="mae_celular" name="mae_celular" required><br>
+							<label for="mae_email">E-mail*:</label><br>
+							<input type="email" id="mae_email" name="mae_email" required><br>
+							<label for="escolaridade">Escolaridade:</label><br>
+							<input type="text" id="escolaridade" name="escolaridade"><br>
+							<div class="col-4 col-12-medium">
+								<label for="responsavel-financeiro-mae-sim">É responsável financeiro?</label><br>
+								<input type="radio" id="responsavel-financeiro-mae-sim" name="financeiro" value="sim">
+								<label for="responsavel-financeiro-mae-sim">Sim</label>
+								<input type="radio" id="responsavel-financeiro-mae-nao" name="financeiro" value="nao">
+								<label for="responsavel-financeiro-mae-nao">Não</label><br></br>
+
+								<h2>Dados do Curso</h2>
+								<label for="curso_nome">Nome do curso escolhido*:</label><br>
+								<select id="curso_nome" name="curso_nome" required>
+									<option value="" selected disabled>Selecione um curso</option>
+									<option value="java">Java</option>
+									<option value="html">HTML</option>
+									<option value="cpp">C++</option>
+								</select><br>
+
+								<label for="valor">Valor*:</label><br>
+								<input type="text" id="valor" name="valor" required readonly><br>
+								<script>
+									const cursoNome = document.getElementById("curso_nome");
+									const valor = document.getElementById("valor");
+
+									cursoNome.addEventListener("change", function () {
+										if (cursoNome.value === "java") {
+											valor.value = "2.000,00";
+										} else if (cursoNome.value === "html") {
+											valor.value = "800,00";
+										} else if (cursoNome.value === "cpp") {
+											valor.value = "2.500,00";
+										} else {
+											valor.value = "";
+										}
+									});
+								</script>
+
+								<label for="data_ingresso">Data de ingresso*:</label><br>
+								<input type="date" id="data_ingresso" name="data_ingresso" value="" required><br>
+
+
+
+								</br><label for="forma_pagamento">Forma de pagamento (Quantidade de parcelas)*:</label><br>
+								<select id="forma_pagamento" name="forma_pagamento" required>
+									<option value="a_vista">À vista (Pix, Boleto e Cartão de Débito/Crédito)</option>
+									<option value="12x">12 vezes (Cartão de crédito)</option>
+									<option value="24x">24 vezes (Cartão de crédito)</option>
+								</select><br>
+
+								<label for="forma_pagamento">Forma de pagamento*:</label><br>
+								<select id="forma_pagamento" name="forma_pagamento" required>
+									<option value="pix">PIX</option>
+									<option value="boleto">Boleto</option>
+									<option value="cartao">Cartão de Crédito/Débito</option>
+								</select><br>
+
+								<input type="submit" value="Enviar" onclick="showPopup()">
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="copyright">
+				<li>&copy; privateCursos. 2024. Todos direitos reservados.</li>
+				<li>Design: <a href="https://github.com/nathanmartinss">Nathan</a></li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
